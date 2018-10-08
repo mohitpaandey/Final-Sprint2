@@ -1,0 +1,143 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="noindex, nofollow" name="robots">
+<nav class="navbar navbar-expand-lg ">
+
+    <mat-toolbar class="head">
+      <img src="logo.png" alt="Nature" class="responsive">
+      <!-- <mat-icon>games</mat-icon> -->
+      <!-- <span class="header">Welcome to one step Job Finder</span> -->
+      <span class="spacer"></span>
+     
+    </mat-toolbar>
+  </nav>
+  
+
+<form  #PersonalForm="ngForm" action="/action_page.php" style="border:1px solid #ccc">
+  <div class="container">
+    <h3>Personal Data</h3>
+    <hr>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="requiredText">Date of Birth</label>
+      <div class="col-sm-10">{{personal.dateOfBirth}}
+        <!-- <input matInput [matDatepicker]="picker1" name="dateOfBirth" placeholder="Enter your DOB"
+          type="text" id="dateOfBirth">
+        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+        <mat-datepicker #picker1 startView="year" [startAt]="startDate"></mat-datepicker> -->
+      </div>
+    </div>
+
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="optionalText">Gender</label>
+      <div class="col-sm-10">{{personal.gender}}
+      <!-- <mat-radio-group formControlName="floatLabel">
+        <mat-radio-button value="male">Male &nbsp;&nbsp;&nbsp;</mat-radio-button> 
+        <mat-radio-button value="female">Female &nbsp;&nbsp;&nbsp;</mat-radio-button>
+        <mat-radio-button value="other">Other &nbsp;&nbsp;&nbsp;</mat-radio-button>
+      </mat-radio-group> -->
+    </div>
+  </div>
+
+  <div class="form-group" class="expand">
+    <label class="form-label form-label-big col-sm-2" for="requiredText">Marital Status</label>
+    <div class="col-sm-10">{{personal.maritalStatus}}
+    <!-- <mat-select placeholder="Marital status" class="form-control ng-untouched ng-pristine ng-invalid" 
+    name="maritalStatus" id="maritalStatus" type="option">
+      <mat-option value="option">Single</mat-option>
+      <mat-option value="option">Married</mat-option>
+    </mat-select> -->
+  </div>
+  </div>
+
+  <div class="form-group" class="expand">
+    <label class="form-label form-label-big col-sm-2" for="requiredText">Permanent Address</label>
+    <div class="col-sm-10">{{personal.permanentAddress}}
+      <!-- <input class="form-control ng-untouched ng-pristine ng-invalid" name="permanentAddress" placeholder="Enter your permanent Address"
+        type="text" id="permanentAddress"> -->
+    </div>
+  </div>
+
+  <div class="form-group" class="expand">
+    <label class="form-label form-label-big col-sm-2" for="requiredText">Home Town</label>
+    <div class="col-sm-10">{{personal.homeTown}}
+      <!-- <input class="form-control ng-untouched ng-pristine ng-invalid" name="homeTown" placeholder="Enter your hometown"
+        type="text" id="homeTown"> -->
+    </div>
+  </div>
+
+  <div class="form-group" class="expand">
+    <label class="form-label form-label-big col-sm-2" for="requiredText">Pin Code<em>*</em></label>
+    <div class="col-sm-10">{{personal.pinCode}}
+      <!-- <input class="form-control ng-untouched ng-pristine ng-invalid" name="pinCode" placeholder="Enter your Pin Code"
+        type="text" id="pinCode"> -->
+    </div>
+  </div>
+
+  <div class="form-group" class="expand">
+    <label class="form-label form-label-big col-sm-2" for="optionalText">Languages</label>
+    <div class="col-sm-10">{{personal.languages}}
+      <!-- <input class="form-control ng-untouched ng-pristine ng-invalid" name="languages" placeholder="Enter known Languages"
+        type="text" id="languages"> -->
+    </div>
+  </div>
+
+  <div class="form-group" class="expand">
+    <label class="form-label form-label-big col-sm-2" for="optionalText">Age</label>
+    <div class="col-sm-10">{{personal.age}}
+      <!-- <input class="form-control ng-untouched ng-pristine ng-invalid" name="age" placeholder="Enter your Age"
+        type="text" id="age"> -->
+    </div>
+  </div>
+
+  <div class="form-group" class="expand">
+    <label class="form-label form-label-big col-sm-2" for="optionalText">Blood Group</label>
+    <div class="col-sm-10">{{personal.bloodGroup}}
+      <!-- <input class="form-control ng-untouched ng-pristine ng-invalid" name="bloodGroup" placeholder="Enter blood Group"
+        type="text" id="bloodGroup"> -->
+    </div>
+  </div>
+
+  <div class="form-group" class="expand">
+    <label class="form-label form-label-big col-sm-2" for="optionalText">Linkedin URL</label>
+    <div class="col-sm-10">{{personal.linkedinUrl}}
+      <!-- <input class="form-control ng-untouched ng-pristine ng-invalid" name="linkedinUrl" placeholder="Enter your linkedin Profile Url"
+        type="text" id="linkedinUrl"> -->
+    </div>
+  </div>
+
+  <div class="form-group" class="expand">
+    <label class="form-label form-label-big col-sm-2" for="optionalText">Email-Id</label>
+    <div class="col-sm-10">{{personal.emailId}}
+      <!-- <input class="form-control ng-untouched ng-pristine ng-invalid" name="emailId" placeholder="Enter your Email Id"
+        type="text" id="emailId"> -->
+    </div>
+  </div>
+
+  <div class="form-group" class="expand">
+    <label class="form-label form-label-big col-sm-2" for="optionalText">GitHub URL</label>
+    <div class="col-sm-10">{{personal.gitHubUrl}}
+      <!-- <input class="form-control ng-untouched ng-pristine ng-invalid" name="gitHubUrl" placeholder="Enter your Github Profile URL"
+        type="text" id="gitHubUrl"> -->
+    </div>
+  </div>
+
+  <div class="text-center">
+    <!-- <input class="btn btn-form" type="button" value="Update">  -->
+    <input class="btn btn-form" type="submit" value="Update">
+  </div>
+  <hr>
+
+ </div> 
+</form>
+<footer class="footer">
+
+    <div layout="row" layout-align="center center" flex>
+      <p>Matchzone Thinks</p>
+    </div>
+  
+  </footer>
+

@@ -1,0 +1,64 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="noindex, nofollow" name="robots">
+<nav class="navbar navbar-expand-lg ">
+
+    <mat-toolbar class="head">
+      <img src="logo.png" alt="Nature" class="responsive">
+      <!-- <mat-icon>games</mat-icon> -->
+      <!-- <span class="header">Welcome to one step Job Finder</span> -->
+      <span class="spacer"></span>
+ 
+    </mat-toolbar>
+  </nav>
+
+<form #LocationForm="ngForm" action="/action_page.php" style="border:1px solid #ccc">
+  <div class="container">
+    <h3>Location Details</h3>
+    <hr>
+
+    <!-- <form class="form-horizontal ng-untouched ng-pristine ng-invalid" novalidate="" > -->
+    <!-- <div class="container-fluid main-content-outer"> -->
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="requiredText">City<em>*</em></label>
+      <div class="col-sm-10">
+        <input matInput class="form-control ng-untouched ng-pristine ng-invalid" name="city" placeholder="Enter your City"
+          type="text" id="city" [(ngModel)]="location.city">
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="requiredText">State<em>*</em></label>
+      <div class="col-sm-10">
+        <input class="form-control ng-untouched ng-pristine ng-valid" name="state" placeholder="Enter your State"
+          type="text" id="state" [(ngModel)]="location.state">
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="requiredText">Country<em>*</em></label>
+      <div class="col-sm-10">
+        <input class="form-control ng-untouched ng-pristine ng-invalid" name="country" placeholder="Enter your Country"
+          type="text" id="country" [(ngModel)]="location.country">
+      </div>
+    </div>
+
+   
+    <div class="text-center">
+      <!-- <input class="btn btn-form" type="reset" value="Reset form">-->
+      <!-- <input class="btn btn-form" type="button" value="Update">  -->
+      <input class="btn btn-form" type="submit" value="Save" (click)="onSubmit(location)">
+    </div>
+    <hr>
+
+  </div>
+</form>
+<footer class="footer">
+
+    <div layout="row" layout-align="center center" flex>
+      <p>Matchzone Thinks</p>
+    </div>
+ 
+  </footer>

@@ -1,0 +1,217 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="noindex, nofollow" name="robots">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<nav class="navbar navbar-expand-lg ">
+
+    <mat-toolbar class="head">
+      <img src="logo.png" alt="Nature" class="responsive">
+      <!-- <mat-icon>games</mat-icon> -->
+      <!-- <span class="header">Welcome to one step Job Finder</span> -->
+      <span class="spacer"></span>
+      <!-- <a routerLink="login"><button mat-raised-button>Login</button></a>
+      <a routerLink="register"><button mat-raised-button>Register</button></a> -->
+    </mat-toolbar>
+  </nav>
+
+
+  <div style=" margin:auto">
+  <mat-card class="example-card">
+      
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image">
+        <img mat-card-image src="imga.png">
+      </div><span class="mat-card-title" style="text-align:center">
+        <mat-card-title>Hello {{userName}}</mat-card-title>
+
+        <mat-card-subtitle>Welcome to Match Zone</mat-card-subtitle>
+        </span>
+
+    </mat-card-header>
+    <div style="text-align: center;">
+      <img mat-card-image src="image.png" alt="Photo " style="max-width: 150px;">  
+    </div>
+    <mat-card-content>
+      <p style="text-align:left">
+        Email : {{userId}}<br>
+        
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+
+      <!-- <a id="scale-demo" href="#!" class="btn-floating btn-large scale-transition scale-out">
+           <i class="material-icons" >add</i> 
+          <a class="btn-floating pulse"><i class="material-icons">add</i></a>
+          
+          
+            <div class="collapsible-header"><i class="material-icons">add</i></div>
+            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+           -->
+           <div style="text-align: center;">
+           <button (click)="toggleCollapse()" img src="if_Plus_2190977.png"> <i class="material-icons">add_circle</i>
+           </button></div>
+
+      <div *ngIf="!isCollapsed" >
+
+        <mat-accordion class="example-headers-align">
+          <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Personal data
+              </mat-panel-title>
+              <mat-panel-description>
+                <!-- Type your name and age -->
+                <mat-icon>account_circle</mat-icon>
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+
+            <!-- <mat-form-field>
+                  <input matInput placeholder="First name">
+                </mat-form-field> 
+           
+                <mat-form-field>
+                  <input matInput type="number" min="1" placeholder="Age">
+                </mat-form-field> -->
+
+            <mat-action-row>
+              <!-- <button mat-button color="primary" (click)="nextStep()">Next</button> -->
+              <div style="text-align: left;align-content: left;">
+              <a  href="/view-personal"><button mat-button color="primary" (click)="nextStep()">View Details</button></a></div>
+              <a routerLink="/personal-data"><button mat-button color="primary" (click)="nextStep()">Enter Details</button></a>
+            </mat-action-row>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel [expanded]="step === 1" (opened)="setStep(1)" hideToggle>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Academic Details
+              </mat-panel-title>
+              <mat-panel-description>
+                <!-- tells us abt ur academic details -->
+                <mat-icon>book</mat-icon>
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+
+            <!-- <mat-form-field>
+                  <input matInput placeholder="Country">
+                </mat-form-field> -->
+
+            <mat-action-row>
+              <button mat-button color="warn" (click)="prevStep()">Previous</button>
+              <a routerLink="/view-academics"><button mat-button color="primary" (click)="nextStep()">View Details</button></a>
+              <a routerLink="/academic-details"><button mat-button color="primary" (click)="nextStep()">Enter Details</button></a>
+            </mat-action-row>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel [expanded]="step === 2" (opened)="setStep(2)" hideToggle>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Skills
+              </mat-panel-title>
+              <mat-panel-description>
+                <!-- tells us abt ur academic details -->
+                <mat-icon>portrait</mat-icon>
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+
+            <!-- <mat-form-field>
+                  <input matInput placeholder="Country">
+                </mat-form-field> -->
+
+            <mat-action-row>
+              <button mat-button color="warn" (click)="prevStep()">Previous</button>
+              <a routerLink="/view-skills"><button mat-button color="primary" (click)="nextStep()">View Skills</button></a>
+              <a routerLink="/skills"><button mat-button color="primary" (click)="nextStep()">Enter Skills</button></a>
+            </mat-action-row>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel [expanded]="step === 3" (opened)="setStep(3)" hideToggle>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Projects
+              </mat-panel-title>
+              <mat-panel-description>
+                <!-- tells us abt ur academic details -->
+                <mat-icon>map</mat-icon>
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+
+            <!-- <mat-form-field>
+                  <input matInput placeholder="Country">
+                </mat-form-field> -->
+
+            <mat-action-row>
+              <button mat-button color="warn" (click)="prevStep()">Previous</button>
+              <a routerLink="/view-projects"><button mat-button color="primary" (click)="nextStep()">View Details</button></a>
+              <a routerLink="/project"><button mat-button color="primary" (click)="nextStep()">Enter Details</button></a>
+            </mat-action-row>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel [expanded]="step === 4" (opened)="setStep(4)" hideToggle>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Location
+              </mat-panel-title>
+              <mat-panel-description>
+                <!-- tells us abt ur academic details -->
+                <mat-icon>add_location</mat-icon>
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+
+            <!-- <mat-form-field>
+                  <input matInput placeholder="Country">
+                </mat-form-field> -->
+
+            <mat-action-row>
+              <button mat-button color="warn" (click)="prevStep()">Previous</button>
+              <a routerLink="/view-location"><button mat-button color="primary" (click)="nextStep()">View Details</button></a>
+              <a routerLink="/location"><button mat-button color="primary" (click)="nextStep()">Enter Details</button></a>
+            </mat-action-row>
+          </mat-expansion-panel>
+
+
+
+          <mat-expansion-panel [expanded]="step === 5" (opened)="setStep(5)" hideToggle>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Certification
+              </mat-panel-title>
+              <mat-panel-description>
+                <!-- your Skills -->
+                <mat-icon>date_range</mat-icon>
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+
+            <!-- <mat-form-field>
+                  <input matInput placeholder="Date" [matDatepicker]="picker" (focus)="picker.open()" readonly>
+                </mat-form-field>
+                <mat-datepicker #picker></mat-datepicker> -->
+
+            <mat-action-row>
+              <button mat-button color="warn" (click)="prevStep()">Previous</button>
+              <a routerLink="/view-experience"><button mat-button color="primary" (click)="nextStep()">View Details</button></a>
+              <a routerLink="/certification"><button mat-button color="primary" (click)="nextStep()">Enter Details</button></a>
+            </mat-action-row>
+          </mat-expansion-panel>
+
+        </mat-accordion>
+
+      </div>
+
+    </mat-card-actions>
+  
+  </mat-card>
+</div>
+
+
+<footer class="footer">
+
+  <div layout="row" layout-align="center center" flex>
+    <p>Matchzone Thinks</p>
+  </div>
+
+</footer>

@@ -1,0 +1,6 @@
+com/matchzone/model/Result.class
+com/matchzone/model/Search.class
+com/matchzone/service/Tagging.class
+com/matchzone/controller/NLPController.class
+com/matchzone/service/Tokenization.class
+com/matchzone/corenlp/CoreNlpApplication.class

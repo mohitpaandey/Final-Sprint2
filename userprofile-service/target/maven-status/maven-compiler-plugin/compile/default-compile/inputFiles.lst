@@ -1,0 +1,9 @@
+/home/sivangi/Desktop/ibm-w2-matchzone-server/userprofile-service/src/main/java/com/matchzone/service/UserServiceImpl.java
+/home/sivangi/Desktop/ibm-w2-matchzone-server/userprofile-service/src/main/java/com/matchzone/controller/UserController.java
+/home/sivangi/Desktop/ibm-w2-matchzone-server/userprofile-service/src/main/java/com/matchzone/exceptions/UserNotFoundException.java
+/home/sivangi/Desktop/ibm-w2-matchzone-server/userprofile-service/src/main/java/com/matchzone/exceptions/UserAlreadyExistsException.java
+/home/sivangi/Desktop/ibm-w2-matchzone-server/userprofile-service/src/main/java/com/matchzone/producerconfig/ProducerKafkaConfig.java
+/home/sivangi/Desktop/ibm-w2-matchzone-server/userprofile-service/src/main/java/com/matchzone/model/User.java
+/home/sivangi/Desktop/ibm-w2-matchzone-server/userprofile-service/src/main/java/com/matchzone/UserProfileService.java
+/home/sivangi/Desktop/ibm-w2-matchzone-server/userprofile-service/src/main/java/com/matchzone/service/UserService.java
+/home/sivangi/Desktop/ibm-w2-matchzone-server/userprofile-service/src/main/java/com/matchzone/repository/UserRepository.java

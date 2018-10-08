@@ -1,0 +1,52 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="noindex, nofollow" name="robots">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<nav class="navbar navbar-expand-lg ">
+
+    <mat-toolbar class="head">
+            <img src="logo.png" alt="Nature" class="responsive">
+        <!-- <mat-icon>games</mat-icon> -->
+        <!-- <span class="header">Welcome to one step Job Finder</span> -->
+        <span class="spacer"></span>
+
+    </mat-toolbar>
+
+</nav>
+<mat-card class="card blue-grey darken-1"><strong>
+        <h3 class="heading">User-Registration</h3>
+    </strong></mat-card>
+<form #UserRegistrationForm="ngForm" class="container">
+    <mat-form-field>
+        <input type="text" name="userName" #UserName="ngModel" [(ngModel)]="userName" matInput placeholder="UserName">
+    </mat-form-field><br>
+
+    <mat-form-field>
+        <input type="password" name="userPassword" #UserPassword="ngModel" [(ngModel)]="userPassword" required matInput
+            placeholder="UserPassword">
+    </mat-form-field><br>
+
+    <!-- <mat-form-field>
+        <input type="text" name="userEmail" #UserName="ngModel" [(ngModel)]="userEmail" required matInput placeholder="UserEmailId">
+    </mat-form-field> -->
+
+    <mat-form-field class="expand">
+        <input [(ngModel)]="userEmail" required matInput placeholder="Enter your email" [formControl]="email" required>
+        <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field>
+
+</form>
+<div class="submit">
+
+    <button type="submit" [disabled]="!UserRegistrationForm.valid" class="btn btn-primary" (click)="onSubmit()"><a href="login">Submit</a></button>
+
+</div>
+<mat-card class="card blue-grey darken-1"></mat-card>
+<!-- <mat-toolbar class="footer" color="primary"></mat-toolbar> -->
+
+<footer class="footer">
+
+    <div layout="row" layout-align="center center" flex>
+        <p>Matchzone Thinks</p>
+    </div>
+
+</footer>

@@ -1,0 +1,12 @@
+com/matchzone/producer/Producer.class
+com/matchzone/AcademicApplication.class
+com/matchzone/consumerservicelistener/KafkaConsumerListener.class
+com/matchzone/kafkaproducer/ProducerKakfaConfiguration.class
+com/matchzone/indexer/SourceNodeProperty.class
+com/matchzone/model/AcademicDetails.class
+com/matchzone/indexer/RelationshipProperty.class
+com/matchzone/indexer/TargetNodeProperty.class
+com/matchzone/consumerservice/ConsumerKafkaConfig.class
+com/matchzone/producer/Receiver.class
+com/matchzone/indexer/Index.class
+com/matchzone/indexer/Indexer.class

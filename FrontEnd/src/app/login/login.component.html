@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<nav class="navbar navbar-expand-lg ">
+
+  <mat-toolbar class="head">
+      <img src="logo.png" alt="Nature" class="responsive">
+    <!-- <mat-icon>games</mat-icon> -->
+    <!-- <span class="header">Welcome to one step Job Finder</span> -->
+    <span class="spacer"></span>
+
+  </mat-toolbar>
+
+</nav>
+<mat-card class="card blue-grey darken-1"><strong>
+    <h3 class="heading">Login</h3>
+  </strong>
+  <form #UserLoginForm="ngForm" class="container">
+
+    <mat-form-field class="expand">
+      <input matInput placeholder="EmailId" name="userEmail" id="userEmail"  [(ngModel)]="userEmail" [formControl]="email" required>
+      <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+  </mat-form-field> <br><br>
+  <mat-form-field class="expand">
+    <input type="password" class="form-control" name="userPassword" id="userPassword" class="validate" [(ngModel)]="userPassword" required matInput placeholder="Password">
+  </mat-form-field>
+
+
+  </form>
+  <div class="submit">
+
+    <button type="submit" [disabled]="!UserLoginForm.valid" class="btn btn-primary" (click)="onLogin()">
+      Login</button>
+
+  </div>
+</mat-card>
+<footer class="footer">
+
+  <div layout="row" layout-align="center center" flex>
+    <p>Matchzone Thinks</p>
+  </div>
+
+</footer>

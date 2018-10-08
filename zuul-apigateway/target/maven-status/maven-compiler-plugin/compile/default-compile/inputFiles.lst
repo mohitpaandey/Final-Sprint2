@@ -1,0 +1,5 @@
+/home/sivangi/Desktop/ibm-w2-matchzone-server/zuul-apigateway/src/main/java/com/example/springbootzuulgatwayproxy/filters/PostFilter.java
+/home/sivangi/Desktop/ibm-w2-matchzone-server/zuul-apigateway/src/main/java/com/example/springbootzuulgatwayproxy/filters/RouteFilter.java
+/home/sivangi/Desktop/ibm-w2-matchzone-server/zuul-apigateway/src/main/java/com/stackroute/maverick/springbootzuulgatwayproxy/SpringBootZuulgatwayproxyApplication.java
+/home/sivangi/Desktop/ibm-w2-matchzone-server/zuul-apigateway/src/main/java/com/example/springbootzuulgatwayproxy/filters/ErrorFilter.java
+/home/sivangi/Desktop/ibm-w2-matchzone-server/zuul-apigateway/src/main/java/com/example/springbootzuulgatwayproxy/filters/PreFilter.java

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.matchzone.repository.test.UserRepositoryTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.046 s - in com.matchzone.repository.test.UserRepositoryTest

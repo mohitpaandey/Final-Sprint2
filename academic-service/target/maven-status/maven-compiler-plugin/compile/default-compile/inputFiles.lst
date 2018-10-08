@@ -1,0 +1,12 @@
+/home/sivangi/Desktop/ibm-w2-matchzone-server/academic-service/src/main/java/com/matchzone/AcademicApplication.java
+/home/sivangi/Desktop/ibm-w2-matchzone-server/academic-service/src/main/java/com/matchzone/consumerservicelistener/KafkaConsumerListener.java
+/home/sivangi/Desktop/ibm-w2-matchzone-server/academic-service/src/main/java/com/matchzone/kafkaproducer/ProducerKakfaConfiguration.java
+/home/sivangi/Desktop/ibm-w2-matchzone-server/academic-service/src/main/java/com/matchzone/indexer/SourceNodeProperty.java
+/home/sivangi/Desktop/ibm-w2-matchzone-server/academic-service/src/main/java/com/matchzone/consumerservice/ConsumerKafkaConfig.java
+/home/sivangi/Desktop/ibm-w2-matchzone-server/academic-service/src/main/java/com/matchzone/indexer/Indexer.java
+/home/sivangi/Desktop/ibm-w2-matchzone-server/academic-service/src/main/java/com/matchzone/indexer/TargetNodeProperty.java
+/home/sivangi/Desktop/ibm-w2-matchzone-server/academic-service/src/main/java/com/matchzone/model/AcademicDetails.java
+/home/sivangi/Desktop/ibm-w2-matchzone-server/academic-service/src/main/java/com/matchzone/producer/Producer.java
+/home/sivangi/Desktop/ibm-w2-matchzone-server/academic-service/src/main/java/com/matchzone/producer/Receiver.java
+/home/sivangi/Desktop/ibm-w2-matchzone-server/academic-service/src/main/java/com/matchzone/indexer/RelationshipProperty.java
+/home/sivangi/Desktop/ibm-w2-matchzone-server/academic-service/src/main/java/com/matchzone/indexer/Index.java

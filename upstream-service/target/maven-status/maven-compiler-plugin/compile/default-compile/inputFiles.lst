@@ -1,0 +1,9 @@
+/home/sivangi/Desktop/ibm-w2-matchzone-server/upstream-service/src/main/java/com/matchzone/controller/UpstreamServiceController.java
+/home/sivangi/Desktop/ibm-w2-matchzone-server/upstream-service/src/main/java/com/matchzone/UpstreamServiceApplication.java
+/home/sivangi/Desktop/ibm-w2-matchzone-server/upstream-service/src/main/java/com/matchzone/model/AcademicDetails.java
+/home/sivangi/Desktop/ibm-w2-matchzone-server/upstream-service/src/main/java/com/matchzone/model/Skills.java
+/home/sivangi/Desktop/ibm-w2-matchzone-server/upstream-service/src/main/java/com/matchzone/model/PersonalInfo.java
+/home/sivangi/Desktop/ibm-w2-matchzone-server/upstream-service/src/main/java/com/matchzone/model/Location.java
+/home/sivangi/Desktop/ibm-w2-matchzone-server/upstream-service/src/main/java/com/matchzone/model/Project.java
+/home/sivangi/Desktop/ibm-w2-matchzone-server/upstream-service/src/main/java/com/matchzone/producerconfig/ProducerKafkaConfig.java
+/home/sivangi/Desktop/ibm-w2-matchzone-server/upstream-service/src/main/java/com/matchzone/model/Certification.java

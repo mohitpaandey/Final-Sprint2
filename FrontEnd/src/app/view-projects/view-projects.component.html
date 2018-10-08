@@ -1,0 +1,132 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="noindex, nofollow" name="robots">
+<nav class="navbar navbar-expand-lg ">
+
+    <mat-toolbar class="head">
+      <img src="logo.png" alt="Nature" class="responsive">
+      <!-- <mat-icon>games</mat-icon> -->
+      <!-- <span class="header">Welcome to one step Job Finder</span> -->
+      <span class="spacer"></span>
+ 
+    </mat-toolbar>
+  </nav>
+
+<form #ProjectsForm="ngForm" action="/action_page.php" style="border:1px solid #ccc">
+  <div class="container">
+    <h3>Project Details</h3>
+    <hr>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="requiredText">Project Title</label>
+      <div class="col-sm-10">{{projects.projectTitle}}
+        <!-- <input matInput class="form-control ng-untouched ng-pristine ng-invalid" name="projectTitle" placeholder="Enter Project Title"
+          type="text" id="projectTitle"> -->
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="requiredText">Client Name</label>
+      <div class="col-sm-10">{{projects.client}}
+        <!-- <input class="form-control ng-untouched ng-pristine ng-valid" name="client" placeholder="Enter Client Name of Project"
+          type="text" id="client"> -->
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="requiredText">Project Status</label>
+      <div class="col-sm-10">{{projects.projectStatus}}
+        <!-- <input class="form-control ng-untouched ng-pristine ng-invalid" name="projectStatus" placeholder="Enter Current Project Status"
+          type="text" id="projectStatus"> -->
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="password">Duration</label>
+      <div class="col-sm-10">{{projects.duration}}
+        <!-- <input class="form-control ng-untouched ng-pristine ng-invalid" name="duration" placeholder="Enter Duration of Project"
+          type="text" id="duration"> -->
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="requiredText">Project Details</label>
+      <div class="col-sm-10">{{projetcs.projectDetails}}
+        <!-- <input class="form-control ng-untouched ng-pristine ng-invalid" name="projectDetails" placeholder="Enter Project Details"
+          type="text" id="projectDetails"> -->
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="requiredText">Project Members</label>
+      <div class="col-sm-10">{{projetcs.projectMembers}}
+        <!-- <input class="form-control ng-untouched ng-pristine ng-invalid" name="projectMembers" placeholder="Enter Project Members"
+          type="text" id="projectMembers"> -->
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="optionalText">Role</label>
+      <div class="col-sm-10">{{projects.role}}
+        <!-- <input class="form-control ng-untouched ng-pristine ng-invalid" name="role" placeholder="Enter your Role in Project"
+          type="text" id="role"> -->
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="optionalText">Project Location</label>
+      <div class="col-sm-10">{{projetcs.projectLocation}}
+        <!-- <input class="form-control ng-untouched ng-pristine ng-invalid" name="projectLocation" placeholder="Enter Project Location"
+          type="text" id="projectLocation"> -->
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="optionalText">Project At</label>
+      <div class="col-sm-10">{{projects.projectAt}}
+        <!-- <input class="form-control ng-untouched ng-pristine ng-invalid" name="projectAt" placeholder="Enter where your Project is At"
+          type="text" id="projectAt"> -->
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="optionalText">Team Size</label>
+      <div class="col-sm-10">{{projects.teamSize}}
+        <!-- <input class="form-control ng-untouched ng-pristine ng-invalid" name="teamSize" placeholder="Enter Team Size"
+          type="text" id="teamSize"> -->
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="optionalText">Skills</label>
+      <div class="col-sm-10">{{projects.skills}}
+        <!-- <input class="form-control ng-untouched ng-pristine ng-invalid" name="Skills" placeholder="Enter Skills learned"
+          type="text" id="skills"> -->
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="optionalText">Project URL</label>
+      <div class="col-sm-10">{{projects.projectURL}}
+        <!-- <input class="form-control ng-untouched ng-pristine ng-invalid" name="projectURL" placeholder="Enter Project URL"
+          type="text" id="projectURL"> -->
+      </div>
+    </div>
+
+    <div class="text-center">
+      <!-- <input class="btn btn-form" type="button" value="Update">  -->
+      <input class="btn btn-form" type="submit" value="Update">
+    </div>
+    <hr>
+
+  </div>
+</form>
+<footer class="footer">
+
+    <div layout="row" layout-align="center center" flex>
+      <p>Matchzone Thinks</p>
+    </div>
+ 
+  </footer>

@@ -1,0 +1,12 @@
+com/matchzone/listener/KafkaProducer.class
+com/matchzone/config/KafkaConsumerConfiguration.class
+com/matchzone/indexer/SourceNodeProperty.class
+com/matchzone/LocationApplication.class
+com/matchzone/indexer/RelationshipProperty.class
+com/matchzone/indexer/TargetNodeProperty.class
+com/matchzone/listener/KafkaConsumer.class
+com/matchzone/model/Location.class
+com/matchzone/indexer/IndexerOutput.class
+com/matchzone/config/KakfaProducerConfiguration.class
+com/matchzone/indexer/Index.class
+com/matchzone/indexer/Indexer.class

@@ -1,0 +1,44 @@
+Front End
+HTML
+HTML5
+Bootstrap
+CSS
+SASS
+SCSS
+AJAX
+Java Script
+React Libraries
+React
+React JS
+Angular Framework
+Angular JS
+Angular Material
+Materialized CSS
+Angular
+Back End
+Ruby
+Java Framework
+Spring Boot
+Spring Core
+Spring MVC
+.NET Framework
+C#
+C
+Perl
+C++
+PHP
+Python
+Java
+Database
+No SQL
+MongoDB
+Cassendra
+Cloudera
+Neo4j
+SQL
+ORACLE
+ORACLE 11G
+ORACLE 12C
+MySQL
+DB2
+

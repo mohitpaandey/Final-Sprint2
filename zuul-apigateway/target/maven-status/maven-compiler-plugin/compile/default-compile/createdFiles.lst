@@ -1,0 +1,5 @@
+com/stackroute/maverick/springbootzuulgatwayproxy/SpringBootZuulgatwayproxyApplication.class
+com/example/springbootzuulgatwayproxy/filters/PreFilter.class
+com/example/springbootzuulgatwayproxy/filters/RouteFilter.class
+com/example/springbootzuulgatwayproxy/filters/ErrorFilter.class
+com/example/springbootzuulgatwayproxy/filters/PostFilter.class

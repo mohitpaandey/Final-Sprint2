@@ -1,0 +1,6 @@
+/home/sivangi/Desktop/ibm-w2-matchzone-server/coreNLP-service/src/main/java/com/matchzone/model/Search.java
+/home/sivangi/Desktop/ibm-w2-matchzone-server/coreNLP-service/src/main/java/com/matchzone/corenlp/CoreNlpApplication.java
+/home/sivangi/Desktop/ibm-w2-matchzone-server/coreNLP-service/src/main/java/com/matchzone/service/Tokenization.java
+/home/sivangi/Desktop/ibm-w2-matchzone-server/coreNLP-service/src/main/java/com/matchzone/service/Tagging.java
+/home/sivangi/Desktop/ibm-w2-matchzone-server/coreNLP-service/src/main/java/com/matchzone/model/Result.java
+/home/sivangi/Desktop/ibm-w2-matchzone-server/coreNLP-service/src/main/java/com/matchzone/controller/NLPController.java

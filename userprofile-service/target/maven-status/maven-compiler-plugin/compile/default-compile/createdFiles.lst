@@ -1,0 +1,9 @@
+com/matchzone/producerconfig/ProducerKafkaConfig.class
+com/matchzone/controller/UserController.class
+com/matchzone/exceptions/UserNotFoundException.class
+com/matchzone/model/User.class
+com/matchzone/service/UserServiceImpl.class
+com/matchzone/UserProfileService.class
+com/matchzone/service/UserService.class
+com/matchzone/repository/UserRepository.class
+com/matchzone/exceptions/UserAlreadyExistsException.class

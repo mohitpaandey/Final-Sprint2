@@ -1,0 +1,5 @@
+com/matchzone/personalinfo/PersonalInfoApplication.class
+com/matchzone/consumerservicelistener/KafkaConsumerListener.class
+com/matchzone/kafkaproducer/ProducerKakfaConfiguration.class
+com/matchzone/consumerservice/ConsumerKafkaConfig.class
+com/matchzone/model/PersonalInfo.class

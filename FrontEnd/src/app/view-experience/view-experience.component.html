@@ -1,0 +1,89 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="noindex, nofollow" name="robots">
+<nav class="navbar navbar-expand-lg ">
+
+    <mat-toolbar class="head">
+      <img src="logo.png" alt="Nature" class="responsive">
+      <!-- <mat-icon>games</mat-icon> -->
+      <!-- <span class="header">Welcome to one step Job Finder</span> -->
+      <span class="spacer"></span>
+ 
+    </mat-toolbar>
+  </nav>
+
+<form #CertificationForm="ngForm" action="/action_page.php" style="border:1px solid #ccc">
+  <div class="container">
+    <h3>Certification Details</h3>
+    <hr>
+
+    <!-- <form class="form-horizontal ng-untouched ng-pristine ng-invalid" novalidate="" > -->
+    <!-- <div class="container-fluid main-content-outer"> -->
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="requiredText">Certification Name</label>
+      <div class="col-sm-10">{{certification.certificationName}}
+        <!-- <input matInput class="form-control ng-untouched ng-pristine ng-invalid" name="certificationName" placeholder="Enter Certification Name"
+          type="text" id="certificationName"> -->
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="requiredText">Certification Authority</label>
+      <div class="col-sm-10">{{certification.certificationAuthority}}
+        <!-- <input class="form-control ng-untouched ng-pristine ng-valid" name="certificationAuthority" placeholder="Enter Author of Certification"
+          type="text" id="certificationAuthority"> -->
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="requiredText">License Number</label>
+      <div class="col-sm-10">{{certification.licenseNumber}}
+        <!-- <input class="form-control ng-untouched ng-pristine ng-invalid" name="licenseNumber" placeholder="Enter License Number of Certification"
+          type="text" id="licenseNumber"> -->
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="password">Duration From</label>
+      <div class="col-sm-10">{{certification.durationFrom}}
+        <!-- <input class="form-control ng-untouched ng-pristine ng-invalid" name="durationFrom" placeholder="Enter Start of Duration of Certification"
+          type="text" id="durationFrom"> -->
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="requiredText">Duration To</label>
+      <div class="col-sm-10">{{certification.durationTo}}
+        <!-- <input class="form-control ng-untouched ng-pristine ng-invalid" name="durationTo" placeholder="Enter End of Duration of Certification"
+          type="text" id="durationTo"> -->
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="requiredText">Certification URL</label>
+      <div class="col-sm-10">{{certification.certificationURL}}
+        <!-- <input class="form-control ng-untouched ng-pristine ng-invalid" name="certificationURL" placeholder="Enter Certification URL"
+          type="text" id="certificationURL"> -->
+      </div>
+    </div>
+
+
+    <div class="text-center">
+      <!-- <input class="btn btn-form" type="reset" value="Reset form">-->
+      <input class="btn btn-form" type="submit" value="Update">
+    </div>
+    <hr>
+
+  </div>
+</form>
+<footer class="footer">
+
+    <div layout="row" layout-align="center center" flex>
+      <p>Matchzone Thinks</p>
+    </div>
+ 
+  </footer>
+
+<!-- </div> -->

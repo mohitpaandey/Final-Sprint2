@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<nav class="navbar navbar-expand-lg ">
+   
+    <mat-toolbar class="head">
+    <mat-icon>games</mat-icon>
+        <!-- <span class="header">Welcome to one step Job Finder</span> -->
+        <span class="spacer"></span>
+      
+    </mat-toolbar>
+   
+  </nav>
+
+  <body>
+    <div class="matchzone">
+        <h5><strong>Welcome {{userName}}</strong></h5>
+      </div>
+  <mat-card class="mat-card">
+   
+    <input class="input" class="abc" name="query" [(ngModel)]="query" type="text" placeholder="Search for candidates">  <div class="search"><button type="submit" (click)="postQuery(query)"><i class="fa fa-search"></i></button>
+  </div>
+    
+  </mat-card> 
+ 
+
+</body>
+
+
+  <footer class="footer">
+    
+    <div layout="row" layout-align="center center" flex>
+        <h5>Matchzone </h5>
+    </div>
+  
+ </footer> 

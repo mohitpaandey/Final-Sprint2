@@ -1,0 +1,9 @@
+com/matchzone/producerconfig/ProducerKafkaConfig.class
+com/matchzone/model/Skills.class
+com/matchzone/model/Project.class
+com/matchzone/model/Location.class
+com/matchzone/model/PersonalInfo.class
+com/matchzone/model/Certification.class
+com/matchzone/controller/UpstreamServiceController.class
+com/matchzone/UpstreamServiceApplication.class
+com/matchzone/model/AcademicDetails.class

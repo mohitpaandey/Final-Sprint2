@@ -1,0 +1,132 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="noindex, nofollow" name="robots">
+<nav class="navbar navbar-expand-lg ">
+
+    <mat-toolbar class="head">
+      <img src="logo.png" alt="Nature" class="responsive">
+      <!-- <mat-icon>games</mat-icon> -->
+      <!-- <span class="header">Welcome to one step Job Finder</span> -->
+      <span class="spacer"></span>
+ 
+    </mat-toolbar>
+  </nav>
+
+<form #AcademicForm="ngForm" action="/action_page.php" style="border:1px solid #ccc">
+  <div class="container">
+    <h3>Academic Details</h3>
+    <hr>
+
+     <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="requiredText">Education<em>*</em></label>
+      <div class="col-sm-10">
+        <input class="form-control ng-untouched ng-pristine ng-invalid" name="education" placeholder="Enter your permanent Address"
+        type="text" id="education"  [(ngModel)]="academic.education">
+      </div>
+    </div> 
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="requiredText">Specialisation<em>*</em></label>
+      <div class="col-sm-10">
+        <input class="form-control ng-untouched ng-pristine ng-valid" name="specialisation" placeholder="Specialisation in Degree"
+          type="text" id="specialisation" [(ngModel)]="academic.specialisation">
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="requiredText">University/Institute<em>*</em></label>
+      <div class="col-sm-10">
+        <input class="form-control ng-untouched ng-pristine ng-invalid" name="universityInstitute" placeholder="Enter University/Institute"
+          type="text" id="universityInstitute" [(ngModel)]="academic.universityInstitute">
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="password">Course</label>
+      <div class="col-sm-10">
+        <input class="form-control ng-untouched ng-pristine ng-invalid" name="Course" placeholder="Enter course type whether its full time or Diploma"
+          type="text" id="course" [(ngModel)]="academic.course">
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="requiredText">Passing Year<em>*</em></label>
+      <div class="col-sm-10">
+        <input class="form-control ng-untouched ng-pristine ng-invalid" name="passingYear" placeholder="Enter your Passing Year for University"
+          type="number" id="passingYear" [(ngModel)]="academic.passingYear">
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="requiredText">Grading System<em>*</em></label>
+      <div class="col-sm-10">
+        <input class="form-control ng-untouched ng-pristine ng-invalid" name="gradingSystem" placeholder="Enter your final Grade for University"
+          type="text" id="gradingSystem" [(ngModel)]="academic.gradingSystem">
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="optionalText">Higher Secondary</label>
+      <div class="col-sm-10">
+        <input class="form-control ng-untouched ng-pristine ng-invalid" name="higherSecondary" placeholder="Enter your Higher Secondary Name"
+          type="text" id="higherSecondary" [(ngModel)]="academic.higherSecondary">
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="optionalText">Year of Passing</label>
+      <div class="col-sm-10">
+        <input class="form-control ng-untouched ng-pristine ng-invalid" name="highDuration" placeholder="Enter year of passing of 10th"
+          type="number" id="highDuration" [(ngModel)]="academic.highDuration">
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="optionalText">Location</label>
+      <div class="col-sm-10">
+        <input class="form-control ng-untouched ng-pristine ng-invalid" formcontrolname="highLocation" placeholder="Enter Location of Higher Secondary"
+          type="text" id="highLocation" [(ngModel)]="academic.highLocation">
+ </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="optionalText">Senior Secondary</label>
+      <div class="col-sm-10">
+        <input class="form-control ng-untouched ng-pristine ng-invalid" formcontrolname="seniorSecondary" placeholder="Enter your Senior Secondary Name"
+          type="text" id="seniorSecondary" [(ngModel)]="academic.seniorSecondary">
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="optionalText">Year of Passing</label>
+      <div class="col-sm-10">
+        <input class="form-control ng-untouched ng-pristine ng-invalid" formcontrolname="senDuration" placeholder="Enter year of passing of 12th"
+          type="number" id="senDuration" [(ngModel)]="academic.senDuration">
+      </div>
+    </div>
+
+    <div class="form-group" class="expand" >
+      <label class="form-label form-label-big col-sm-2" for="optionalText">Location</label>
+      <div class="col-sm-10">
+        <input class="form-control ng-untouched ng-pristine ng-invalid" formcontrolname="senLocation" placeholder="Enter Location of Senior Secondary"
+          type="text" id="senLocation" [(ngModel)]="academic.senLocation">
+      </div>
+    </div>
+
+    <div class="text-center">
+      <!-- <input class="btn btn-form" type="button" value="Update">  -->
+      <input class="btn btn-form" type="submit" value="Save" (click)="onSubmit(academic)">
+    </div>
+    <hr>
+
+  </div>
+</form>
+<footer class="footer">
+
+    <div layout="row" layout-align="center center" flex>
+      <p>Matchzone Thinks</p>
+    </div>
+ 
+  </footer>

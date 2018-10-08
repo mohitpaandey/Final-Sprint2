@@ -22,7 +22,7 @@ public class Skills {
 
 	@Id
 	private String profileId;
-	private String iTSkills;
+	private String ITSkills;
 	private String version;
 	private String level;
 	private String lastUsed;
